@@ -14,11 +14,13 @@ sudo apt-get install -y libpcap-dev
 
 # compile
 ``` 
+mkdir -p dev_ws/src && cd dev_ws/src
 git clone https://github.com/zhj-buffer/ROS2_driver_lidar_laserscan.git
+cd ..
 colcon build
 ```
 
-# luanch
+# launch
 ```
 ros2 launch rslidar_sdk start.py
 ```
