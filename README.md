@@ -28,7 +28,7 @@ ros2 launch rslidar_sdk start.py
 ```
 
 ```
-alan@nvidia-desktop:~/src/turtlebot3/src/hls_lfcd_lds_driver$ ros2 topic list 
+alan@nvidia-desktop:~/src$ ros2 topic list 
 /parameter_events 
 /rosout
 /rslidar_points
