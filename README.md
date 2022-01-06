@@ -26,3 +26,11 @@ source install/setup.bash
 ```
 ros2 launch rslidar_sdk start.py
 ```
+
+```
+alan@nvidia-desktop:~/src/turtlebot3/src/hls_lfcd_lds_driver$ ros2 topic list 
+/parameter_events 
+/rosout
+/rslidar_points
+/rslidar_sdk/rslidar_laserscan
+```
