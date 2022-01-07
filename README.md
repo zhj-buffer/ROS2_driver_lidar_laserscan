@@ -47,3 +47,18 @@ RslidarPacket[] packets
 alan@nvidia-desktop:~/src/AMR_ros2_slam_nav2$  
 
 ```
+
+
+```
+ ros2 run rslidar_sdk rslidar_sdk_node
+
+alan@nvidia-desktop:~/src/AMR_ros2_slam_nav2$ ros2 node list 
+/rslidar_laserscan_adapter 
+/rslidar_points_adapter
+alan@nvidia-desktop:~/src/AMR_ros2_slam_nav2$ ros2 topic list 
+/parameter_events 
+/rosout
+/rslidar_points
+/scan
+alan@nvidia-desktop:~/src/AMR_ros2_slam_nav2$  
+```
