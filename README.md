@@ -34,3 +34,16 @@ alan@nvidia-desktop:~/src$ ros2 topic list
 /rslidar_points
 /rslidar_sdk/rslidar_laserscan
 ```
+
+
+```
+
+alan@nvidia-desktop:~/src/AMR_ros2_slam_nav2$ ros2 interface show  rslidar_msg/msg/RslidarPacket 
+builtin_interfaces/Time stamp 
+uint8[1248] data
+alan@nvidia-desktop:~/src/AMR_ros2_slam_nav2$ ros2 interface show  rslidar_msg/msg/RslidarScan 
+std_msgs/Header header 
+RslidarPacket[] packets
+alan@nvidia-desktop:~/src/AMR_ros2_slam_nav2$  
+
+```
