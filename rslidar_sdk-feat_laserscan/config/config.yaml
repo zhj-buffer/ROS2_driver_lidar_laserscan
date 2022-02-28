@@ -14,21 +14,22 @@ common:
 lidar:
   - driver:
       lidar_type: RS16            #LiDAR type - RS16, RS32, RSBP, RS128, RS80, RSM1, RSHELIOS
-      frame_id: /rslidar           #Frame id of message
+      #frame_id: laser           #Frame id of message
+      frame_id: base_scan           #Frame id of message
       msop_port: 6699              #Msop port of lidar
       difop_port: 7788             #Difop port of lidar
       start_angle: 0               #Start angle of point cloud
       end_angle: 360               #End angle of point cloud 
       min_distance: 0.2            #Minimum distance of point cloud
-      max_distance: 200            #Maximum distance of point cloud
+      max_distance: 150            #Maximum distance of point cloud
 #      use_vlan: true              #Use vlan or not
       use_lidar_clock: false       #True--Use the lidar clock as the message timestamp
                                    #False-- Use the system clock as the timestamp
     ros:
       ros_recv_packet_topic: /rslidar_packets          #Topic used to receive lidar packets from ROS
       ros_send_packet_topic: /rslidar_packets          #Topic used to send lidar packets through ROS
-      ros_send_point_cloud_topic: /rslidar_points      #Topic used to send point cloud through ROS
-      ros_send_laser_scan_topic: /rslidar_laserscan    #Topic used to send laser scan through ROS
+      ros_send_point_cloud_topic: /rslidar      #Topic used to send point cloud through ROS
+      ros_send_laser_scan_topic: /scan    #Topic used to send laser scan through ROS
       laser_scan_ring: 7
     proto:
       point_cloud_recv_port: 60021                     #Port number used for receiving point cloud 
